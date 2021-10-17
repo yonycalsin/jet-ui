@@ -1,3 +1,4 @@
+import { normalize } from 'stitches-normalize-css'
 import { createStitches } from '@stitches/react'
 import { errorDark } from './colors/dark/error'
 import { grayDark } from './colors/dark/gray'
@@ -28,4 +29,6 @@ const darkTheme = createTheme('dark-theme', {
   },
 })
 
-export { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config, darkTheme }
+const globalStyles = globalCss(...normalize)
+
+export { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config, darkTheme, globalStyles }
