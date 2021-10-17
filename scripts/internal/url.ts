@@ -1,5 +1,10 @@
 import { fileURLToPath, pathToFileURL } from 'url'
 
+/**
+ * @copyright Stitches Authors
+ * @url https://git.io/JKzsQ
+ */
+
 export default class URL extends globalThis.URL {
   to(...segments: string[]) {
     return segments.reduce((url: URL, segment) => new URL(segment, url), this)
