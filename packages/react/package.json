@@ -17,19 +17,14 @@
     }
   },
   "scripts": {
-    "analyze": "size-limit --why",
     "build": "tsdx build --name jet-ui",
     "lint": "tsdx lint",
-    "prepare": "tsdx build --name jet-ui",
     "size": "size-limit",
     "start": "tsdx watch --name jet-ui",
     "test": "tsdx test --passWithNoTests"
   },
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^6.0.3",
-    "husky": "^7.0.2",
-    "react": "^17.0.1",
-    "tsdx": "^0.14.1"
+    "react": "^17.0.1"
   },
   "peerDependencies": {
     "react": ">=16.8.6"
@@ -40,16 +35,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "size-limit": [
-    {
-      "path": "dist/jet-ui.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/jet-ui.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "dependencies": {
     "stitches-normalize-css": "^1.2.0"
   }

@@ -3,7 +3,25 @@ import * as React from 'react'
 import { styled } from '../../theme/config'
 
 const StyledButton = styled('button', {
-  color: 'red',
+  // Reset
+  all: 'unset',
+  alignItems: 'center',
+  boxSizing: 'border-box',
+  userSelect: 'none',
+  '&::before': {
+    boxSizing: 'border-box',
+  },
+  '&::after': {
+    boxSizing: 'border-box',
+  },
+
+  // Custom reset?
+  display: 'inline-flex',
+  flexShrink: 0,
+  justifyContent: 'center',
+  lineHeight: '1',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+
   variants: {
     colorSchema: {
       error: {
