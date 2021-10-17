@@ -14,7 +14,7 @@
     "build": "tsdx build --name jet-ui",
     "build-storybook": "build-storybook",
     "lint": "tsdx lint",
-    "prepare": "tsdx build ",
+    "prepare": "tsdx build --name jet-ui",
     "size": "size-limit",
     "start": "tsdx watch --name jet-ui",
     "storybook": "start-storybook -p 6006",
@@ -66,5 +66,8 @@
       "path": "dist/jet-ui.esm.js",
       "limit": "10 KB"
     }
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
