@@ -1,4 +1,4 @@
-export const gray = {
+export const grayDark = {
   gray1: 'hsl(0 0% 8.5%)',
   gray2: 'hsl(0 0% 11.0%)',
   gray3: 'hsl(0 0% 13.6%)',

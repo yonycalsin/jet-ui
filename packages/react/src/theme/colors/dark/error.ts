@@ -1,4 +1,4 @@
-export const error = {
+export const errorDark = {
   error1: 'hsl(353 23.0% 9.8%)',
   error2: 'hsl(357 34.4% 12.0%)',
   error3: 'hsl(356 43.4% 16.4%)',

@@ -1,4 +1,4 @@
-export const success = {
+export const successDark = {
   success1: 'hsl(146 30.0% 7.4%)',
   success2: 'hsl(155 44.2% 8.4%)',
   success3: 'hsl(155 46.7% 10.9%)',
