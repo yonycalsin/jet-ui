@@ -13,5 +13,8 @@
   "license": "ISC",
   "workspaces": [
     "packages/react"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
 }
