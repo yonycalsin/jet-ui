@@ -1,6 +1,6 @@
 {
   "name": "@jet-ui/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "Yony Calsin",
   "main": "dist/index.js",
@@ -9,6 +9,13 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/jet-ui.cjs.production.min.js",
+      "default": "./dist/jet-ui.esm.js"
+    }
+  },
   "scripts": {
     "analyze": "size-limit --why",
     "build": "tsdx build --name jet-ui",
@@ -24,22 +31,13 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.15.8",
     "@size-limit/preset-small-lib": "^6.0.3",
-    "@types/react": "^17.0.30",
-    "@types/react-dom": "^17.0.9",
-    "babel-loader": "^8.2.2",
     "husky": "^7.0.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-is": "^17.0.2",
-    "size-limit": "^6.0.3",
     "tsdx": "^0.14.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.4"
+    "react": "^17.0.1"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8.6"
   },
   "engines": {
     "node": ">=14"
