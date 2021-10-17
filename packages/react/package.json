@@ -1,6 +1,6 @@
 {
   "name": "@jet-ui/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "Yony Calsin",
   "main": "dist/index.js",
@@ -33,8 +33,8 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^6.0.3",
     "husky": "^7.0.2",
-    "tsdx": "^0.14.1",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "tsdx": "^0.14.1"
   },
   "peerDependencies": {
     "react": ">=16.8.6"
