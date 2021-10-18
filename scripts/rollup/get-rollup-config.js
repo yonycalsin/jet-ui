@@ -5,7 +5,7 @@ function getRollupConfig(options) {
 
   const name = 'index'
 
-  const options = [
+  const rollupOptions = [
     {
       name,
       format: 'cjs',
@@ -19,7 +19,7 @@ function getRollupConfig(options) {
     },
   ]
 
-  return options.map((option) => createRollupConfig(option))
+  return rollupOptions.map((option) => createRollupConfig(option))
 }
 
 export default getRollupConfig

@@ -3,25 +3,24 @@
   "version": "0.0.2",
   "license": "MIT",
   "author": "Yony Calsin",
-  "main": "dist/index.js",
-  "module": "dist/jet-ui.esm.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
+  "source": "./src/index.ts",
   "files": [
     "dist"
   ],
-  "sideEffects": false,
+  "sideEffects": true,
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "require": "./dist/jet-ui.cjs.production.min.js",
-      "default": "./dist/jet-ui.esm.js"
+      "default": "./dist/index.esm.js",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
-    "build": "tsdx build --name jet-ui",
-    "lint": "tsdx lint",
-    "size": "size-limit",
-    "start": "tsdx watch --name jet-ui",
-    "test": "tsdx test --passWithNoTests"
+    "build": "rollup -c ./rollup.config.js"
   },
   "devDependencies": {
     "react": "^17.0.1"

@@ -3,6 +3,7 @@ import external from 'rollup-plugin-peer-deps-external'
 import sourcemaps from 'rollup-plugin-sourcemaps'
 import { terser } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 
 export function createRollupConfig(options, callback) {
   const name = options.name
@@ -17,9 +18,9 @@ export function createRollupConfig(options, callback) {
       name: 'JetUi',
       sourcemap: true,
       globals: { react: 'React' },
-      exports: 'named',
     },
     plugins: [
+      nodeResolve(),
       external(),
       typescript({
         tsconfig: options.tsconfig,
